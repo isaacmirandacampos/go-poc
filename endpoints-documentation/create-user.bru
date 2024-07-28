@@ -1,0 +1,19 @@
+meta {
+  name: create-user
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{url}}/users
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id": 2,
+    "name": "Isaac Miranda",
+    "email": "isaacdmcampos@gmail.com"
+  }
+}
